@@ -6,5 +6,12 @@
 # которые не делятся нацело на 400, високосными не являются.
 
 def days_in_year(num_year):
-    pass
+    def days_in_year(num_year):
+        if((num_year % 400 == 0) or (num_year % 100 != 0) and (num_year % 4 == 0)):
+            return 'true'
+    return 'false'
+
+print(days_in_year(2020))
+print(days_in_year(2022))
+print(days_in_year(2036))
 
